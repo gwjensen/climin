@@ -7,7 +7,7 @@ from __future__ import absolute_import
 #import os
 #import imp
 #import ctypes
-print "\n\n\n****CLIMIN*************************************************************************************************************\n\n\n\n"
+
 #if sys.platform == 'win32':
 #    basepath = imp.find_module('numpy')[1]
 #    ctypes.CDLL(os.path.join(basepath, 'core', 'libmmd.dll'))
