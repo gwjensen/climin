@@ -365,8 +365,8 @@ def iter_minibatches(lst, batch_size, dims, n_cycles=False, random_state=None):
         n_batches, rest = divmod(len(lst[0]), batch_size)
     else:
         n_batches, rest = divmod(lst[0].shape[dims[0]], batch_size)
-    if rest:
-        n_batches += 1
+    #if rest:
+        #n_batches += 1 #This seems like it will cause problems for the last batch since it won't have the expected size....GWJ
 
     counter = itertools.count()
     if random_state is not None:
